@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 const Result = (props) =>{
     return(
-        <div>{ props.val}</div>
+        <div>{ props.counter}</div>
     )
 }
 export default Result;
