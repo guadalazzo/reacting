@@ -10,8 +10,7 @@ import Form from "./components/form.js";
 class App extends React.Component {
   state = {
     counter: 0,
-    cards: [
-    ]
+    cards: []
   };
 
   incrementCounter = incrementValue => {
@@ -19,10 +18,10 @@ class App extends React.Component {
       counter: prevState.counter + incrementValue
     }));
   };
-  addNewCard = (cardInfo) => {
-      this.setState(prevState => ({
-          cards : prevState.cards.concat(cardInfo)
-      }));
+  addNewCard = cardInfo => {
+    this.setState(prevState => ({
+      cards: prevState.cards.concat(cardInfo)
+    }));
   };
   render() {
     return (
